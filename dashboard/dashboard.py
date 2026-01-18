@@ -12,12 +12,15 @@ st.title("E-Commerce Transaction Dashboard")
 
 @st.cache_data
 def load_data():
-    return pd.read_csv("data.csv", parse_dates=[
-        'order_purchase_timestamp',
-        'order_approved_at',
-        'order_delivered_customer_date',
-        'order_estimated_delivery_date'
-    ])
+    return pd.read_csv(
+        "dashboard/data.csv",
+        parse_dates=[
+            'order_purchase_timestamp',
+            'order_approved_at',
+            'order_delivered_customer_date',
+            'order_estimated_delivery_date'
+        ]
+    )
 
 data = load_data()
 
