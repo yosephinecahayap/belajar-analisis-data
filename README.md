@@ -110,5 +110,22 @@ Analisis RFM menunjukkan bahwa bisnis sangat bergantung pada pelanggan bernilai 
 ---
 
 ## Cara Menjalankan Dashboard
+### Setup Environment (Anaconda)
+```bash
+conda create --name main-ds python=3.9
+conda activate main-ds
+pip install -r requirements.txt
+```
+
+### Setup Environment (Shell / Terminal)
+```bash
+cd belajar-analisis-data-YosephineCahayaPermatahari
+python -m venv env
+env\Scripts\activate
+pip install -r requirements.txt
+```
+
+### Menjalankan Aplikasi Streamlit
 ```bash
 streamlit run dashboard.py
+```
